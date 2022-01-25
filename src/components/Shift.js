@@ -5,8 +5,8 @@ import { GiSun } from "react-icons/gi";
 
 const Container = styled.div`
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
     background-color: ${props => props.theme.background};
@@ -31,7 +31,7 @@ export default function Shift(props) {
         }
     };
 
-    const icon = props.theme === "light" ? <GiMoonBats size={40} /> : <GiSun style={styleLight} size={40} />;
+    const icon = props.theme === "light" ? <GiMoonBats size={60} /> : <GiSun style={styleLight} size={60} />;
 
     return (
         <Container>
