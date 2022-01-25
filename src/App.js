@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Shift from "./components/Shift";
 import { ThemeProvider } from "styled-components";
-import "./App.css";
+import GlobalStyles from "./components/styles/app.styled";
 
 const LightTheme = {
   background: "white"
@@ -21,7 +21,8 @@ function App() {
   const [theme, setTheme] = useState("light")
   return (
     <ThemeProvider  theme={themes[theme]}>
-      <Shift theme={theme} setTheme={setTheme} />
+      <GlobalStyles />
+        <Shift theme={theme} setTheme={setTheme} />
     </ThemeProvider>
   );
 }
